@@ -1,0 +1,136 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  background-color:
+}
+#gradient {
+  z-index: -1;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  color: #fff;
+  background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+  background-size: 400% 400%;
+  animation: Gradient 15s ease infinite;
+}
+@keyframes Gradient {
+  0% {
+      background-position: 0% 50%
+  }
+  50% {
+      background-position: 100% 50%
+  }
+  100% {
+      background-position: 0% 50%
+  }
+}
+#container {
+  height: 525px;
+  width: 360px;
+  margin: 65px auto;
+  background: #f7f7f7;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+}
+h1 {
+  background: #AD133A;
+  color: white;
+  margin: 0;
+  padding: 10px 100px;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: normal;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+h2 {
+  text-align: center;
+}
+p {
+  padding-left: 20px;
+  margin-top: 10px;
+}
+form input[type="text"] {
+  width=70px;
+}
+input {
+  padding-left: 20px;
+}
+#braidslength {
+  padding: 5px 0px 5px 10px;
+  margin-left: 20px;
+  font-size: 17px;
+}
+#braidsvolume {
+  padding: 5px 96px 5px 10px;
+  margin-left: 20px;
+  font-size: 17px;
+}
+#inputsection {
+  margin-left: 20px;
+}
+#attachment {
+  font-size: 14px;
+  /*color: #2980b9;*/
+  color: #red;
+  background-color: #f7f7f7;
+  width: 60%;
+  padding: 5px 5px 8px 8px;
+}
+#attachment:focus {
+  background: #fff;
+  border: 3px solid #2980b9;
+  outline: none;
+}
+#extras {
+  padding: 5px 69px 5px 10px;
+  margin-left: 20px;
+  font-size: 17px;
+}
+#servicequality {
+  padding: 5px 95px 5px 11px;
+  margin-left: 20px;
+  font-size: 17px;
+}
+button {
+  text-transform: uppercase;
+  font-weight: bold;
+  display: block;
+  margin: 5px auto;
+  background: #AD133A;
+  border-radius: 5px;
+  width: 200px;
+  height: 50px;
+  font-size: 17px;
+  color: white;
+}
+button:hover {
+  background: #4c2827;
+  border-bottom-color: #111;
+}
+button:active {
+  position: relative;
+  top: 1px;
+}
+#totalCost {
+  font-size: 30px;
+  margin-top: 5px;
+  text-align: center;
+}
+#totalCost:before {
+  content: "PAYMENT";
+  font-size: 18px;
+  font-weight: bold;
+  display: block;
+  text-transform: uppercase;
+}
+#totalCost sup {
+  font-size: 20px;
+  top: -18px;
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Braids Calculator</title>
+
+    <!--google-font-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <!--custom-css-->
+    <link rel="stylesheet" href="assets/css/index.css">
+  </head>
+  <body>
+
+    <div id="gradient"></div>
+    <div id="container">
+      <h1>SALON CALCULATOR</h1>
+      <div id="calculator">
+
+        <h2>BRAIDS</h2>
+        <form class="" action="index.html" method="post">
+
+          <p>Length of braids?</p>
+          <select id="braidslength">
+
+            <option disabled selected value="0">--Choose an Option--</option>
+            <option value="7000">NGN7000; &#45; After butt length</option>
+            <option value="6500">NGN6500; &#45; Butt length</option>
+            <option value="5000">NGN6000; &#45; After Waist length</option>
+            <option value="4500">NGN5500; &#45; Waist length</option>
+            <option value="4000">NGN5000; &#45; Bra length</option>
+            <option value="3500">NGN4500; &#45; After Shoulder length</option>
+            <option value="3000">NGN4000; &#45; Shoulder length</option>
+
+          </select>
+
+          <p>Thickness of braids?</p>
+          <select id="braidsvolume">
+
+            <option disabled selected value="0">--Choose an Option--</option>
+            <option value="0.005">5&#37; &#45; Big</option>
+            <option value="0.01">10&#37; &#45; Box</option>
+            <option value="0.015">15&#37; &#45; Medium</option>
+            <option value="0.02">20&#37; &#45; Small</option>
+            <option value="0.025">25&#37; &#45; Knotted</option>
+
+          </select>
+
+          <p>Number of attachment used?</p>
+          <div id="inputsection">
+            # <input type="text" id="attachment" placeholder="Number of Attachments">
+          </div>
+
+          <p>Extras?</p>
+          <select id="extras">
+
+            <option selected value="0">--Choose an Option--</option>
+            <option value="500">NGN500; &#45; Hair Wash</option>
+            <option value="500">NGN500; &#45; Edge Control</option>
+            <option value="1000">NGN1000; &#45; curler</option>
+
+          </select>
+
+          <p>How was your service?</p>
+          <select id="servicequality">
+
+            <option disabled selected value="0">--Choose an Option--</option>
+            <option value="0.3">30&#37; &#45; Excellent</option>
+            <option value="0.2">20&#37; &#45; Good</option>
+            <option value="0.15">15&#37; &#45; Just there</option>
+            <option value="0.1">10&#37; &#45; Bad</option>
+            <option value="0.05">5&#37; &#45; Terrible</option>
+
+          </select>
+        </form>
+
+        <button type="button" name="button" id="calculate">CALCULATE!</button>
+
+      </div>
+      <!--calculator end-->
+
+      <div id="totalCost">
+        <sup><b>NGN</b><span id="cost">0.00</span></sup>
+      </div>
+      <!--totalCost end-->
+
+    </div>
+    <!--container end-->
+
+    <!--custom-javascript-->
+    <script src="assets/js/index.js"></script>
+
+  </body>
+</html>
